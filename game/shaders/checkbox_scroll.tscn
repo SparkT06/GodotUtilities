@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://ng5qyn1c4gl"]
+
+[ext_resource type="Shader" path="res://game/shaders/background_scroll.gdshader" id="1_bsc1g"]
+[ext_resource type="Texture2D" uid="uid://b7d62fheppwlq" path="res://assets/environment/background-01.png" id="2_jra1n"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_r0v8g"]
+shader = ExtResource("1_bsc1g")
+
+[node name="CheckboxScroll" type="Sprite2D"]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_r0v8g")
+texture = ExtResource("2_jra1n")
+region_rect = Rect2(0, 0, 2000, 2000)

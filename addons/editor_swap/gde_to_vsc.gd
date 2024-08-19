@@ -13,7 +13,6 @@ func _enter_tree():
 	button.connect("pressed", _on_toggle_pressed)
 	add_control_to_container(CONTAINER_TOOLBAR, button)
 
-
 # This function is called when the plugin is disabled
 func _exit_tree():
 	# Remove the button from the editor
@@ -34,9 +33,6 @@ func _update_editor_settings():
 	settings.set_setting(path,toggle_feature)
 	var b : Button
 	b = Button.new()
-	
-	
-
 	# Apply additional changes based on the toggle value
 	if toggle_feature:
 		# Enable some feature

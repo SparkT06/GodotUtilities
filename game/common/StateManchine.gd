@@ -1,5 +1,4 @@
-class_name CallableStateMachine
-extends RefCounted
+class_name StateMachine extends RefCounted
 
 var state_dictionary = {}
 var current_state: String
