@@ -24,7 +24,6 @@ func save_tilemap_as_scene(tilemap: TileMap):
 	scene.pack(tilemap)
 	var g = Time.get_datetime_dict_from_system()
 	var timestamp = str(g.year) + "-" + str(g.month) + "-" + str(g.day) + "_" + str(g.hour) + "-" + str(g.minute) + "-" + str(g.second)
-	print(g)
 	# Define a path to save the scene
 	var scene_path = "res://generated_tilemaps/tilemap_" + timestamp  + ".tscn"
 	
